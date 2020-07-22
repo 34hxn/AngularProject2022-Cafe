@@ -1,19 +1,6 @@
 <h2>Haroon Sayed-Zada</h2>
 <h2>Student ID: 991533739</h2>
 <p id="dice"></p>
-<img src="" id="pic-result"/>
+<img src="assets/images/dice/side_3.png" id="pic"/>
 <p><button id="roll_button">Roll Dice</button></p>
 
-<script>
-var rollResult = Math.floor(Math.random() * 6) + 1;
-var pic = document.getElementById("pic-result");
- if (rollResult == 1) pic.setAttribute('src', '../assets/dice/side_1.png');
-else if (rollResult == 2) pic.setAttribute('src', '../assets/dice/side_2.png');
-else if (rollResult == 3) pic.setAttribute('src', '../assets/dice/side_3.png');
-else if (rollResult == 4) pic.setAttribute('src', '../assets/dice/side_4.png');
-else if (rollResult == 5) pic.setAttribute('src', '../assets/dice/side_5.png');
-else  pic.setAttribute('src', '../assets/dice/side_6.png');
-
-
-
-</script>
