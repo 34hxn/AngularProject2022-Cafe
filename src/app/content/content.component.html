@@ -1,6 +1,5 @@
 <h2>Haroon Sayed-Zada</h2>
 <h2>Student ID: 991533739</h2>
-<p id="dice"></p>
-<img src="assets/images/dice/side_3.png" id="pic"/>
-<p><button id="roll_button">Roll Dice</button></p>
+<img [src]="value" id = "dice"/>
+<p><button id="roll_button" (click)="diceChange()" >Roll Dice</button></p>
 

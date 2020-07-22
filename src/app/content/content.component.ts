@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
+
 export class ContentComponent implements OnInit {
-
+  value = '../assets/images/dice/side_3.png'
+  bool = false;
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit() { }
+ 
+ 
+  diceChange(){
+      this.value = `../assets/images/dice/side_${Math.floor(Math.random() * 6) + 1}.png`;
+    }
 }
